@@ -1,0 +1,325 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="1012" scrolly="786" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="1146.9190381434178" scrolly="584.1754339141705" scale="0.5307595706103794">
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="lb:UrT?]Wza~Hs9C9cCv" x="-2090" y="-1050">
+      <value name="VALUE">
+        <shadow type="objectList" id="ezg(zw5jS[p6]l~^H%wh">
+          <field name="FIELDNAME">sky</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="tweenCameraExt" id=",EOwbgZ9,9+m`C!GXZUG">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+          <field name="MOVEMENT_TYPE">LINEAR</field>
+          <value name="POSITION">
+            <block type="objectList" id="cw(LHxSYcmg|sC+BV|jZ">
+              <field name="FIELDNAME">cam-map</field>
+            </block>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="-]T$NX^aW28Ku$%@(N8V">
+              <field name="FIELDNAME">statue</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="LwB}sLTB@NGohHOh;2g%">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="OW6!fZN5/jmg/}K1{_3Q" x="-2090" y="-950">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="d$}Kl(#J2RQg+(TQ]!h@">
+          <field name="TEXT">map_button</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="show" id="|%]GBg#XH3S42o/uF6SJ">
+          <value name="VALUE">
+            <shadow type="objectList" id="xgpULGRtCG!GMGleAm_z">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="groupList" id="5Q~2F]1o$3HJn;~xo:rV">
+              <field name="FIELDNAME">text</field>
+            </block>
+          </value>
+          <next>
+            <block type="tweenCameraExt" id="X$kL|t}}+Rvd3FL::0Up">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+              <field name="MOVEMENT_TYPE">LINEAR</field>
+              <value name="POSITION">
+                <block type="objectList" id="8Y%%Jw:+u(6k%)ryC4,2">
+                  <field name="FIELDNAME">cam-map</field>
+                </block>
+              </value>
+              <value name="LOOKAT">
+                <block type="objectList" id="=j)!$KNRh(ijA.Rs8NZ=">
+                  <field name="FIELDNAME">statue</field>
+                </block>
+              </value>
+              <value name="DURATION">
+                <shadow type="math_number" id="vYfm5g_uCe/CN0mJI1(i">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="hide" id="ab/aP{w$Uf~4p0!Gt@%Y">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="me(yZ6~2F9jB=W=B3-8B">
+                      <field name="FIELDNAME">sky</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="H0:u@mrSVVr.Xw[a:._#" x="-2090" y="-530">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="Ns*L*6:U+nTMhNoxLFw2">
+          <field name="TEXT">stage_button</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="show" id="0#fH]fG1WY-2Ktl0#JI0">
+          <value name="VALUE">
+            <shadow type="objectList" id="N`)2JD9OFC.;j#Z]L?Rx">
+              <field name="FIELDNAME">sky</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="hide" id="K2o4B3O-_-]e[2P`N263">
+              <value name="VALUE">
+                <shadow type="objectList" id="_!SMo?^FRd=^5{W[aU!.">
+                  <field name="FIELDNAME">text - Office</field>
+                </shadow>
+                <block type="groupList" id="s/a{PJ~Bdmp|mPpChZ?}">
+                  <field name="FIELDNAME">text</field>
+                </block>
+              </value>
+              <next>
+                <block type="tweenCameraExt" id="lyimhjg01-MS+X/!9;.|">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">LINEAR</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="}E_:#ViGT:ZTrSz9Q*?1">
+                      <field name="FIELDNAME">cam-stage</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="-*6m!HIi7=N)}uqDrdP~">
+                      <field name="FIELDNAME">stage-floor</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="5~w_M7?A|$*~x2H[$geq">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="I4inS/:g#XW-Mmd@({_=" x="-2090" y="-330">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="a[c`bq~*8AHTkykm}bwX">
+          <field name="TEXT">aid_button</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="show" id="sOx:tQ%Fsv]a-nIyp,43">
+          <value name="VALUE">
+            <shadow type="objectList" id="Kc$$K]$[tU|H9,/`XHdI">
+              <field name="FIELDNAME">sky</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="hide" id="0sqW5(U9v15}O_!@Hm#P">
+              <value name="VALUE">
+                <shadow type="objectList" id="_!SMo?^FRd=^5{W[aU!.">
+                  <field name="FIELDNAME">text - Office</field>
+                </shadow>
+                <block type="groupList" id="|xcLD-yaJ%me!M2Pt%eC">
+                  <field name="FIELDNAME">text</field>
+                </block>
+              </value>
+              <next>
+                <block type="tweenCameraExt" id="$xdOEOYU3+X~.+TSz9EO">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">LINEAR</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="*||YVw7iVV}Qq-IAVi7a">
+                      <field name="FIELDNAME">cam-firstaid</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="tV=Kg4U{uTfj`}lRvdng">
+                      <field name="FIELDNAME">ambulance</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="vDzS+KaV(`sdb_9%mDNo">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="amLtmQLK,W-VY[9s]eM/" x="-2070" y="-130">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="q5[+ffzBD)GBurHf!,C~">
+          <field name="TEXT">sculpture_button</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="show" id="RQ/z}#6/lIT/7~;s]mh,">
+          <value name="VALUE">
+            <shadow type="objectList" id="3XvmoJ!jKqcX-0;@p$*!">
+              <field name="FIELDNAME">sky</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="hide" id=";VH}qhONrlMLV}V0j1@8">
+              <value name="VALUE">
+                <shadow type="objectList" id="_!SMo?^FRd=^5{W[aU!.">
+                  <field name="FIELDNAME">text - Office</field>
+                </shadow>
+                <block type="groupList" id="v27yen9aV*UYszEn/9ff">
+                  <field name="FIELDNAME">text</field>
+                </block>
+              </value>
+              <next>
+                <block type="tweenCameraExt" id="EL(FxA~A6,_?rkmsk;r2">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">LINEAR</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="=|ivaZ{s}[zE4a?~UtDU">
+                      <field name="FIELDNAME">cam-sculpture</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="@Vb8LzAJPNb1Oo3PTN#J">
+                      <field name="FIELDNAME">statue</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="cG8EJekvi|38+yCvIO-O">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="e1@r{|Qs?qCB`W|*oO@(" x="-2070" y="70">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="3T9r+9DN[Q69VRQ#^GCs">
+          <field name="TEXT">office_button</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="show" id="`u~EGM)3VlPAozX2G^d.">
+          <value name="VALUE">
+            <shadow type="objectList" id="Qve2jC+3nu_D]?CtPxhH">
+              <field name="FIELDNAME">sky</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="hide" id="wb|o};RXp.zEzRyc02xz">
+              <value name="VALUE">
+                <shadow type="objectList" id="_!SMo?^FRd=^5{W[aU!.">
+                  <field name="FIELDNAME">text - Office</field>
+                </shadow>
+                <block type="groupList" id=".}$h5JUE$!s59JWD)%bR">
+                  <field name="FIELDNAME">text</field>
+                </block>
+              </value>
+              <next>
+                <block type="tweenCameraExt" id="`$C4$=S;sdb-P)vKWNvI">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">LINEAR</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="X2P;p05aP#xCkAG7p0`y">
+                      <field name="FIELDNAME">cam-office</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="lHz98Q7oBQOk$,bln}LS">
+                      <field name="FIELDNAME">office</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="eyq7d}Z=qeeeu]zg5JMq">
+                      <field name="NUM">1</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="addAnnotation" id="8(7LZtQ,SvF!3,,De(yM">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                      <value name="ANNOTATION">
+                        <shadow type="text" id="hFfjjP#eBx)B9s@hC8%B">
+                          <field name="TEXT">Stairs</field>
+                        </shadow>
+                      </value>
+                      <value name="TARGET">
+                        <shadow type="objectList" id="Vz1acjNT-hFFWmB,Cw]l">
+                          <field name="FIELDNAME">an-office</field>
+                        </shadow>
+                      </value>
+                      <value name="CONTENTS">
+                        <shadow type="text" id="DRH9HQPcDa)?uzE8B#1.">
+                          <field name="TEXT"></field>
+                        </shadow>
+                        <block type="text_join" id="i.4+,4~k?e)JaYO1|YEh">
+                          <mutation items="2"></mutation>
+                          <value name="ADD0">
+                            <block type="textMultiline" id="Q)tFBQ|J;E=aWlfQ$B2Z">
+                              <field name="HIGHLIGHT_MODE">html</field>
+                              <field name="TEXT">There's an accessibility issue with the stairs. &lt;br /&gt;
+&lt;a href="#" class="anlink" style="color: white !important;"&gt;Let's fix it!&lt;/a&gt;
+                              </field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="H.M{h:nzUl;.]xsT%mP@">
+                          <field name="TEXT">poi1</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="845.4000000000001" viewport-y="40" viewport-w="550.59375" viewport-h="359.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

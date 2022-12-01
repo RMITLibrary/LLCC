@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Festival map</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="Festival map">
+
+<style>
+
+
+.sidenav {
+  width: 140px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.content {
+  margin-left: 160px; 
+  padding: 0px 10px;
+  display: block; 
+  position: absolute;
+}
+
+.button {
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    background: #ccc;
+    border: none;
+    text-decoration: none;
+    color: #000;
+}
+}
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover, .button:focus {
+    background-color: #fff; 
+    color: #f00;
+}
+
+.child {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+@media screen and (max-height: 450px) {
+}
+
+#map_iframe {
+    top: 0px;
+    left: 0px;
+    width: 800px;
+    height: 600px;
+    border: 0;
+    display: block; 
+    position: absolute;
+}
+
+:root {
+  --pos: 10000px;
+}
+
+#activity_iframe {
+    display: block; 
+    position: absolute;
+    width: 600px; 
+    height: 400px; 
+    top: 50px;    
+    left: var(--pos);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+</style>
+
+<script>
+var r = document.querySelector(':root');
+
+function myFunction_set() {
+  r.style.setProperty('--pos', '100px');
+}
+
+function myFunction_reset() {
+  r.style.setProperty('--pos', '10000px');
+}
+</script>
+
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <button type="button" id="map_button" class="button" onclick="myFunction_reset()">Map</button>
+        <button type="button" id="office_button" class="button" onclick="myFunction_reset()">Office</button>
+            <button type="button" class="button child" onclick="myFunction_set()">Activity</button>
+        <button type="button" id="stage_button" class="button" onclick="myFunction_reset()">Stage</button>
+        <button type="button" id="aid_button" class="button" onclick="myFunction_reset()">First aid</button>
+        <button type="button" id="sculpture_button" class="button" onclick="myFunction_reset()">Sculpture</button>
+    </div>
+
+
+    <div class="content">
+        <iframe id="map_iframe" src="festival2.html"></iframe>
+        <iframe id="activity_iframe" src="office.html"></iframe>
+    </div>
+
+
+</body>
+
+</html>
